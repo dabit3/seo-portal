@@ -1,0 +1,250 @@
+/* app css stylesheet */
+
+body {
+  margin: 0;
+  background: url('../img/bg.png');
+  background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-logo-container img {
+  padding-left: 11px;
+  padding-top: 8px;
+}
+
+.db-icon {
+  padding-right: 7px;
+  padding-top:1px;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.login-info {
+  height: 39px;
+border-bottom: 1px solid rgba(0,0,0 ,.5);
+}
+
+.login-info p {
+  font-size:14px;
+  float:left;
+  margin-left: 10px;
+  margin-top: 11px;
+}
+
+.login-info p a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+.login-info p a:hover {
+  color: #fff;
+  opacity: .9;
+}
+
+.login-info img {
+  width: 25px;
+  margin-top: 9px;
+  margin-left: 10px;
+  float: left;
+  border-left: 3px solid #40ac2b !important;
+}
+
+.main-left-nav {
+  border-top: 1px solid rgba(255,255,255, .1);
+}
+
+.main-header {
+  background: #f3f3f3; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3f3f3 0%, #e2e2e2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f3f3f3 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f3f3f3 0%,#e2e2e2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f3f3f3 0%,#e2e2e2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f3f3f3 0%,#e2e2e2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+height: 49px;
+border-bottom: 1px solid rgba(0,0,0,.2);
+position: relative;
+z-index: 1200;
+}
+
+.aside-hero {
+  position: absolute;
+top: 49px;
+left: 0;
+width:220px;
+z-index: 1002;
+background: #3a3633;
+min-height: 1200px;
+box-shadow: inset -16px 0px 12px -4px rgba(0,0,0,.2);
+}
+
+.main-container {
+  margin-left: 220px;
+}
+
+.aside-inner-1 {
+
+}
+
+.clearfix {
+  height: 0;
+  clear:both;
+}
+
+.main-menu {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.main-menu li {
+  
+  display: list-item;
+}
+
+.main-menu a {
+    color: #A8A8A8;
+    text-decoration: none;
+
+}
+
+.main-menu a li p {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main-menu a li {
+    color: #fff;
+    padding: 10px 10px 10px 11px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.main-menu a li{
+   opacity: .5 ;
+}
+
+.main-menu a li:hover {
+  opacity: 1;
+}
+
+.ct-ng-view-container {
+  padding: 0px 20px;
+}
+
+.heading-container {
+  height: 85px;
+}
+
+.heading-container .page-title {
+  height: 66px;
+  width: 347px;
+   float: left;
+}
+
+.heading-container .page-title h1 {
+  font-weight: 300;
+  font-size: 24px;
+    float:left;
+
+}
+
+.heading-container .page-title p {
+  float:left;
+  font-size: 16px;
+  padding: 9px 9px 0px 10px;
+}
+
+.heading-container .page-title h5 {
+  float:left;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.heading-container .page-stats {
+  float: left;
+  padding-right: 30px;
+  width: 347px;
+  height: 66px;
+}
+
+.heading-container .page-stats ul {
+  margin-top: 0px;
+}
+
+.heading-container .page-stats ul li {
+  width: 75px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ct-ng-view-header {
+  background: #474544;
+  height: 39px;
+}
+
+.ct-chart-accordian {
+    float: left;
+    margin: auto;
+    position: relative;
+    width: 630px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(0,0,0,.25);
+    height: 430px;
+}
+
+.helper-page-container {
+  padding-top:35px;
+}
+
+.ct-accordian-nav {
+  height: 30px;
+  background: #575553;
+}
+
+.close-accordian {
+    
+    color: #FFFFFF;
+}
+
+.close-accordian-p {
+  margin: 0;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-size: 40px;
+  opacity: .9;
+  padding-left: 9px;
+}
+
+.close-accordian-p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.open-accordian {
+    color: #FFFFFF;
+}
+
+.open-accordian-p {
+  margin: 0;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-size: 40px;
+  opacity: .9;
+  padding-left: 9px;
+  display: none;
+}
+
+.small-chart {
+  height: 30px !important;
+  overflow: hidden !important;
+  
+}

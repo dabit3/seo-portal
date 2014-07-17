@@ -1,0 +1,19 @@
+		<div class="ct-ng-view-container" >
+			<div>
+				<div ct-nav-directive></div>
+					<div id="top-five">
+							<div ng-controller="TopFiveCtrl">
+								<button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Last 5 Days of traffic by Search Engine</button>
+								<hr>
+								<div collapse="!isCollapsed">
+									<div class="well well-lg">
+										<div top-five>
+										</div>
+									</div>
+								</div>
+							</div><!-- end TopFiveCtrl -->
+
+					</div><!-- end last-7-days -->
+				</div>
+			</div>
+		</div>

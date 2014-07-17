@@ -1,0 +1,18 @@
+<header class="main-header">
+  <script src="https://www.connect-final-proxy.appspot.com/query?id=ahVzfmNvbm5lY3QtZmluYWwtcHJveHlyFQsSCEFwaVF1ZXJ5GICAgICA8ogKDA&format=data-table-response" type="text/javascript" charset="utf-8"></script>
+    <div>
+      <div class="main-logo-container">
+        <img src="img/logo.png" alt="">
+       		<?php
+				session_start();
+				if( !empty($_SESSION["Authenticated"]) )
+				{
+				    ?>
+					<div class='ct-logged-in'>
+				    <p>You are Logged In&nbsp;</p>
+				    <a href='logout.php' > Click here to log out</a></div>
+
+				    
+      </div>
+    </div>
+  </header>

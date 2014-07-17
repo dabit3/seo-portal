@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>SEO Dashboard</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div ng-include src="'partials/ct-header.html'"></div>
+  <div ng-include src="'partials/ct-aside.html'"></div>
+  
+  <div class="main-container">
+    <div class="ct-ng-view-header">
+    </div>
+    <div>
+      <div>
+        <div class="ct-ng-view-container" >
+          <h2>No PPC Campaigns At This Time</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script type="text/javascript" src='https://www.google.com/jsapi?autoload={"modules":[{"name":"visualization","version":"1"}]}'></script>
+  <script src="lib/jquery.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/getdata.js"></script>
+  <script src="js/google_api/total_traffic.js"></script>
+  <script src="js/window-loading.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-animate.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script type="text/javascript" src="lib/angular-bootstrap.js" charset="utf-8"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/factories/dataFactory.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/traffic.js"></script>
+</body>
+</html>
