@@ -1,3 +1,6 @@
+<?php
+require 'admin-login.php';
+?>
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
@@ -11,32 +14,19 @@
   <div ng-include src="'partials/ct-header.html'"></div>
   <div ng-include src="'partials/ct-aside.html'"></div>
   
-  <div class="main-container" >
+  <div class="main-container" ng-controller="MOMCtrl">
     <div class="ct-ng-view-header">
     </div>
     <div>
       <div>
-        <div class="ct-ng-view-container" ng-controller="VisitorInformationCtrl">
+        <div class="ct-ng-view-container">
             <div ct-nav-directive></div>
-
             <div class="spinner"><img src="img/now-loading.gif" alt="" style="width: 300px;"></div>
-            <div class="ct-ng-view-container" ng-controller="DashboardCtrl as dash">
-            <div class="loading-container">
-              <button id="click-me2" class="app-open-close">New VS Returning Visitors Last 30 Days</button>
-              <div id="my-div2">
-                <div id="total-traffic-wrapper-2" class="ct-scale"></div>
-              </div>
-              <button id="click-me3" class="app-open-close">Top 5 Pages Last 30 Days</button>
-              <div id="my-div3">
-                <div id="total-traffic-wrapper-3" class="ct-scale"></div>
-              </div>
-              <button id="click-me1" class="app-open-close">Traffic Type Last 30 Days</button>
-              <div id="my-div1">
-                <div id="traffic-type" class="ct-scale"></div>
-              </div>
-              
-            </div>
-          </div>
+               <div class="loading-container">
+                  <section>
+                    <h2>Last 30 Days VS Previous Year</h2>
+                  </section>
+               </div>
         </div>
       </div>
     </div>
@@ -44,12 +34,10 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
-  <style>
-  .aside-hero {
-    height: 3750px;
-    }</style>
   <script type="text/javascript" src='https://www.google.com/jsapi?autoload={"modules":[{"name":"visualization","version":"1"}]}'></script>
   <script src="lib/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/getdata.js"></script>
+  <script src="js/google_api/total_traffic.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
   <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
@@ -58,10 +46,10 @@
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/factories/dataFactory.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
-  <script src="js/total-traffic.js"></script>
-  <script src="js/initMed.js"></script>
+  <script src="js/init.js"></script>
 </body>
 </html>

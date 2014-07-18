@@ -1,3 +1,6 @@
+<?php
+require 'admin-login.php';
+?>
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
